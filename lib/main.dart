@@ -6,7 +6,7 @@ class Aeropuerto extends StatelessWidget{
   Widget build(BuildContext context){
     return MaterialApp(
         debugShowCheckedModeBanner: false,
-      title: 'Mi Ratonera',
+      title: 'Aeropuerto',
       theme: ThemeData(
         primarySwatch:Colors.brown,
       ),//ruta ventanas
