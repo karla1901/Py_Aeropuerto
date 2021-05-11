@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-void main() => runApp(MiRatoneraApp());
-class MiRatoneraApp extends StatelessWidget{
+void main() => runApp(Aeropuerto());
+class Aeropuerto extends StatelessWidget{
   @override
   Widget build(BuildContext context){
     return MaterialApp(
