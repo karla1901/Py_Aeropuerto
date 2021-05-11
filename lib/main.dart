@@ -8,7 +8,7 @@ class Aeropuerto extends StatelessWidget{
         debugShowCheckedModeBanner: false,
       title: 'Mi Ratonera',
       theme: ThemeData(
-        primarySwatch:Colors.blue,
+        primarySwatch:Colors.brown,
       ),//ruta ventanas
       routes:<String, WidgetBuilder>{
         "/Inicio":(BuildContext context)=> Inicio(),
