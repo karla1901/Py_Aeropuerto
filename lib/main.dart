@@ -94,7 +94,7 @@ class Inicio extends StatelessWidget {
                           child: Text(
                             "INICIO",
                             textAlign: TextAlign.center,
-                            style: TextStyle(color: Colors.indigo, fontWeight: FontWeight.w900),
+                            style: TextStyle(color: Colors.brown, fontWeight: FontWeight.w900),
                           ), //fin del center
                         ), //fin center
                       ), //fin sizedbox de inicio
@@ -135,7 +135,7 @@ class Inicio extends StatelessWidget {
                     Padding(
                       padding: EdgeInsets.all(10),
                       child: RaisedButton(
-                        color: Colors.black12,
+                        color: Colors.blueGrey,
                         shape: new RoundedRectangleBorder(borderRadius: BorderRadius.circular(10.0)),
                         onPressed: () {
                           Navigator.pushNamed(context, "/Productos");
