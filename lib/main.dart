@@ -24,7 +24,7 @@ class Empresa extends StatelessWidget{
   Widget build(BuildContext context){
     return new Scaffold(
       appBar: AppBar(
-        title: new Text('Empresa'),
+        title: new Text('EMPRESA'),
       ),
       body: Center(
         child: Text ('Sección Empresa'),
@@ -38,7 +38,7 @@ class Productos extends StatelessWidget{
   Widget build(BuildContext context){
     return new Scaffold(
       appBar: AppBar(
-        title: new Text('Productos'),
+        title: new Text('PRODUCTOS'),
       ),
       body: Center(
         child: Text ('Sección Productos'),
@@ -52,7 +52,7 @@ class Contacto extends StatelessWidget{
   Widget build(BuildContext context){
     return new Scaffold(
       appBar: AppBar(
-        title: new Text('Contacto'),
+        title: new Text('CONTACTO'),
       ),
       body: Center(
         child: Text ('Sección Contacto'),
@@ -71,7 +71,112 @@ class Inicio extends StatelessWidget {
           color: Colors.brown, 
           image:DecorationImage(image: NetworkImage('https://raw.githubusercontent.com/karla1901/mis_imagenes/main/aeropuerto.jpg'),alignment: Alignment.topCenter)
         ),//fin caja
+          child: Column(
+          children: <Widget>[
+            //hacemos la primera fila de el mapa
+            Row(mainAxisAlignment: MainAxisAlignment.center, children: <Widget>[
+              Column(
+                children: <Widget>[
+                  Padding(
+                    padding: EdgeInsets.all(10),
+                    child: RaisedButton(
+                      color: Colors.white,
+                      shape: new RoundedRectangleBorder(borderRadius: BorderRadius.circular(10.0)),
+
+                      onPressed: () {
+                        Navigator.pushNamed(context, "/inicio");
+                      }, //onpressed
+                      child: SizedBox(
+                        width: 100,
+                        height: 100,
+                        child: Center(
+                          child: Text(
+                            "INICIO",
+                            textAlign: TextAlign.center,
+                            style: TextStyle(color: Colors.indigo, fontWeight: FontWeight.w900),
+                          ), //fin del center
+                        ), //fin center
+                      ), //fin sizedbox de inicio
+                    ), //boton inicio
+                  ) //fin padding
+                ], //fin widget niño
+              ), //fin de column dentro de column interna 1
+              Column(
+                children: <Widget>[
+                  Padding(
+                    padding: EdgeInsets.all(10),
+                    child: RaisedButton(
+                      color: Colors.white,
+                      shape: new RoundedRectangleBorder(borderRadius: BorderRadius.circular(10.0)),
+                      onPressed: () {
+                        Navigator.pushNamed(context, "/empresa");
+                      },
+                      child: SizedBox(
+                        width: 100,
+                        height: 100,
+                        child: Center(
+                          child: Text("EMPRESA", textAlign: TextAlign.center),
+                        ),
+                      ),
+                    ),
+                  )
+                ],
+              ), //r1 columna 2
+            ] //segundo children fin 2 widget
+                ), //cierre de row- fila 1
+
+//inicio de la fila 2
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: <Widget>[
+                Column(
+                  children: <Widget>[
+                    Padding(
+                      padding: EdgeInsets.all(10),
+                      child: RaisedButton(
+                        color: Colors.white,
+                        shape: new RoundedRectangleBorder(borderRadius: BorderRadius.circular(10.0)),
+                        onPressed: () {
+                          Navigator.pushNamed(context, "/productos");
+                        },
+                        child: SizedBox(
+                          width: 100,
+                          height: 100,
+                          child: Center(
+                            child: Text("PRODUCTOS", textAlign: TextAlign.center),
+                          ),
+                        ),
+                      ),
+                    )
+                  ],
+                ), // row 2 fin columna 1
+                Column(
+                  children: <Widget>[
+                    Padding(
+                      padding: EdgeInsets.all(10),
+                      child: RaisedButton(
+                        color: Colors.white,
+                        shape: new RoundedRectangleBorder(borderRadius: BorderRadius.circular(10.0)),
+                        onPressed: () {
+                          Navigator.pushNamed(context, "/contacto");
+                        },
+                        child: SizedBox(
+                          width: 100,
+                          height: 100,
+                          child: Center(
+                            child: Text("CONTACTO", textAlign: TextAlign.center),
+                          ),
+                        ),
+                      ),
+                    )
+                  ], //fin children del 2-2
+                ), //fin row2 columna 2
+              ],
+            ), //fin row 2 fila 2
+          ], //cierre de children widget 1
+        ), //cierre de column en el child
       ),//fin de container
     );//fin de scaffold
   }//fin de widget
 }//fin Inicio
+
