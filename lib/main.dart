@@ -156,7 +156,7 @@ class Inicio extends StatelessWidget {
                     Padding(
                       padding: EdgeInsets.all(10),
                       child: RaisedButton(
-                        color: Colors.white,
+                        color: Colors.blueGrey,
                         shape: new RoundedRectangleBorder(borderRadius: BorderRadius.circular(10.0)),
                         onPressed: () {
                           Navigator.pushNamed(context, "/Contacto");
